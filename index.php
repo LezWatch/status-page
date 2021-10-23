@@ -40,17 +40,17 @@
 						?>
 						<div class="col">
 							<div class="card border-<?php echo $website['class']; ?>">
-								<h5 class="card-header"><?php echo $website['monitor_status']; ?></h5>
+								<h5 class="card-header bg-<?php echo $website['class']; ?> text-white"><?php echo $website['monitor_status']; ?></h5>
 								<div class="card-body">
 
-									<p class="card-text">Overall uptime (last 30 days): <?php echo $website['monitor_uptime']; ?>%</p>
+									<p class="card-text"><i class="bi bi-graph-up-arrow"></i> Overall uptime (last 30 days): <?php echo $website['monitor_uptime']; ?>%</p>
 
-									<p class="card-text"><?php echo $website['monitor_info']; ?></p>
+									<p class="card-text"><i class="bi bi-clock-history"></i> <?php echo $website['monitor_info']; ?></p>
 
 									<a href="<?php echo $website['monitor_link']; ?>" class="btn btn-secondary" target="_blank">Service Details</a>
 									<a href="<?php echo $website['website_url']; ?>" class="btn btn-primary" target="_blank">Visit <?php echo $website['website_name']; ?></a>
 								</div>
-								<div class="card-footer bg-<?php echo $website['class']; ?>"><small class="text-white-50">Monitoring started <?php echo $website['monitor_started']; ?></small></div>
+								<div class="card-footer bg-<?php echo $website['class']; ?>"><small class="text-white-50"><i class="bi bi-calendar2-plus"></i> Monitoring started <?php echo $website['monitor_started']; ?></small></div>
 							</div>
 						</div>
 						<?php

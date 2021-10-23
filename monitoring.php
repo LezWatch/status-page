@@ -113,13 +113,13 @@ if ( ! empty( $all_responses ) && is_array( $all_responses ) ) {
 			if ( $monitor_status == 0 ) { // Monitor is paused:
 
 				$class        = 'info';
-				$monitor_status = $website_name . ' monitoring is currently <strong class="text-' . $class . '">paused</strong> <span class="link-info"><i class="bi bi-shield-slash"></i></span>';
+				$monitor_status = '<i class="bi bi-shield-slash"></i> ' . $website_name . ' monitoring is currently <strong class="text-light">paused</strong>';
 				$monitor_info   = 'This may be for website updates/maintenance. Please check again later for an updated status report';
 
 			} elseif ( $monitor_status == 2 ) { // Website is up:
 
 				$class        = 'success';
-				$monitor_status = $website_name . ' is currently <strong class="text-' . $class . '">operational</strong> <span class="link-success"><i class="bi bi-shield-check"></i></span>';
+				$monitor_status = '<i class="bi bi-shield-check"></i> ' . $website_name . ' is currently <strong class="text-light">operational</strong>';
 
 				// Check if there has been any recorded downtime:
 				if ( empty( $response['logs'] ) ) {
@@ -141,7 +141,7 @@ if ( ! empty( $all_responses ) && is_array( $all_responses ) ) {
 				// Website is down:
 
 				$class        = 'danger';
-				$monitor_status = $website_name . ' is currently <strong class="text-' . $class . '">down</strong> <span class="link-danger"><i class="bi bi-shield-exclamation"></i></span>';
+				$monitor_status = '<i class="bi bi-shield-exclamation"></i> ' . $website_name . ' is currently <strong class="text-light">down</strong>';
 
 				// Get length of current downtime in hours:
 				$last_duration = time() - $response['logs'][0]['duration'];
