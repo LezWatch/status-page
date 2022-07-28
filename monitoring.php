@@ -29,8 +29,6 @@ if ( file_exists( './' . $filename ) ) {
 		$api_keys = array(
 			'lwtv'      => 'm781800598-b7f0dce51e9c3b7d9d85e200',
 			'lwtv-docs' => 'm783186644-93e4a02249e1011bac3c4923',
-			'lwcomm'    => 'm782395487-68b8fa1fbc2388bfbc902752',
-			'lezpress'  => 'm782395488-dc56250afd0cf12ca68857c9',
 		);
 
 		// Prepare array
