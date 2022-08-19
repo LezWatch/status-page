@@ -66,7 +66,7 @@
 
 				<p class="mb-1"><a href="https://github.com/LezWatch/status-page/" target="_blank"><i class="bi bi-github"></a></i> <a href="https://twitter.com/lezwatchtv/" target="_blank"><i class="bi bi-twitter"></i></a></p>
 
-				<p class="mb-1">Licened <a href="/LICENSE">MIT</a></p>
+				<p class="mb-1">Licensed <a href="/LICENSE">MIT</a></p>
 			</footer>
 
 		</div>
