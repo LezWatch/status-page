@@ -20,5 +20,5 @@ jobs:
           ARGS: "-rlgoDzvc -i"
           REMOTE_HOST: ${{ secrets.LWTV_STATUS_HOST }}
           REMOTE_USER: ${{ secrets.LWTV_STATUS_USER }}
-          TARGET: ${{ secrets.LWTV_STATUS_TARGET }}
+          TARGET: /home/${{ secrets.LWTV_STATUS_USER }}/${{ secrets.LWTV_STATUS_DOMAIN }}/
           EXCLUDE: "/.git/, /.github/"
