@@ -62,7 +62,7 @@
 			</main>
 
 			<footer class="my-5 pt-5 text-muted text-center text-small">
-				<p class="mb-1">&copy; <?php echo date( 'Y' ); ?> LezPress | Powered by <a href="<?php echo $uptime_url; ?>">Uptime Robot</a></p>
+				<p class="mb-1">&copy; <?php echo date( 'Y' ); ?> LezWatch.TV | Powered by <a href="<?php echo $uptime_url; ?>">Uptime Robot</a></p>
 
 				<p class="mb-1"><a href="https://github.com/LezWatch/status-page/" target="_blank"><i class="bi bi-github"></a></i> <a href="https://twitter.com/lezwatchtv/" target="_blank"><i class="bi bi-twitter"></i></a></p>
 
