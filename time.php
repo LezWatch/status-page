@@ -1,11 +1,11 @@
 <?php
 
 /*
- * These funtions are to mess with time.
+ * These functions are to mess with time.
  */
 
 // Calculate how long ago something was:
-function get_time_ago($time_stamp) {
+function get_time_ago( $time_stamp ) {
 	$time_difference = strtotime('now') - $time_stamp;
 
 	if ( $time_difference >= 60 * 60 * 24 * 365.242199 ) {
