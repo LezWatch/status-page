@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>LezWatch Status Pages</title>
+		<title>LezWatch Status Page</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -17,7 +17,7 @@
 			<div class="container">
 				<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 					<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-						<object type="image/svg+xml" data="toaster.svg" class="logo"></object>
+						<?php file_get_contents( './toster.svg' ); ?>
 						<span class="fs-4">LezWatch Status</span>
 					</a>
 
@@ -28,10 +28,10 @@
 					</ul>
 				</header>
 
-				
 				<p class="lead">We continuously monitor the status of LezWatch.TV and all its related services. If there are any interruptions, outages, or maintenances, information will be available here.</p>
 
 				<h2>Current Status</h2>
+
 				<?php
 				if ( empty( $websites ) ) {
 					?>
