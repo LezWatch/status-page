@@ -9,7 +9,7 @@
 		<title>LezWatch Status Pages</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	</head>
 
 	<body class="bg-light">
@@ -25,14 +25,11 @@
 						<li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Status</a></li>
 						<li class="nav-item"><a href="https://lezwatchtv.com/" class="nav-link">LezWatch.TV</a></li>
 						<li class="nav-item"><a href="https://docs.lezwatchtv.com/" class="nav-link">Documentation</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
 					</ul>
 				</header>
 
-				<div class="py-5">
-					<p class="lead">We continuously monitor the status of LezWatch.TV and all its related services. If there are any interruptions, outages, or maintenances, information will be available here.</p>
-				</div>
+				
+				<p class="lead">We continuously monitor the status of LezWatch.TV and all its related services. If there are any interruptions, outages, or maintenances, information will be available here.</p>
 
 				<h2>Current Status</h2>
 				<?php
@@ -66,9 +63,7 @@
 					foreach ( $websites as $website ) {
 						?>
 						<div class="card">
-							<div class="card-header">
-								<a href="<?php echo $website['website_url']; ?>"><?php echo $website['website_name']; ?></a>
-							</div>
+							<h5 class="card-header"><a href="<?php echo $website['website_url']; ?>"><?php echo $website['website_name']; ?></a></h5>
 							<div class="card-body">
 								<p class="card-text"><i class="bi bi-graph-up-arrow"></i> Overall uptime (last 30 days): <?php echo $website['monitor_uptime']; ?>%</p>
 								<p class="card-text"><i class="bi bi-clock-history"></i> <?php echo $website['monitor_info']; ?></p>
@@ -77,6 +72,7 @@
 								<a href="<?php echo $website['website_url']; ?>" class="btn btn-outline-primary btn-sm" target="_blank">Visit <?php echo $website['website_name']; ?></a>
 							</div>
 						</div>
+						<p>&nbsp;</p>
 						<?php
 					}
 				}

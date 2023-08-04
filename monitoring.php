@@ -111,13 +111,13 @@ if ( ! empty( $all_responses ) && is_array( $all_responses ) ) {
 			if ( $monitor_status == 0 ) { // Monitor is paused:
 
 				$class        = 'info';
-				$monitor_status = '<i class="bi bi-shield-slash"></i> ' . $website_name . ' monitoring is currently <strong class="text-light">paused</strong>';
+				$monitor_status = '<i class="bi bi-shield-slash"></i> ' . $website_name . ' monitoring is currently <strong>paused</strong>';
 				$monitor_info   = 'This may be for website updates/maintenance. Please check again later for an updated status report';
 
 			} elseif ( $monitor_status == 2 ) { // Website is up:
 
 				$class        = 'success';
-				$monitor_status = '<i class="bi bi-shield-check"></i> ' . $website_name . ' is currently <strong class="text-light">operational</strong>';
+				$monitor_status = '<i class="bi bi-shield-check"></i> ' . $website_name . ' is currently <strong>operational</strong>';
 
 				// Check if there has been any recorded downtime:
 				if ( empty( $response['logs'] ) ) {
