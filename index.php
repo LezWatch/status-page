@@ -7,9 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>LezWatch Status Page</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 	</head>
 
 	<body class="bg-light">
@@ -83,7 +83,11 @@
 			<footer class="my-5 pt-5 text-muted text-center text-small">
 				<p class="mb-1">&copy; <?php echo date( 'Y' ); ?> LezWatch.TV | Powered by <a href="<?php echo $uptime_url; ?>">Uptime Robot</a></p>
 
-				<p class="mb-1"><a href="https://github.com/LezWatch/status-page/" target="_blank"><i class="bi bi-github"></a></i> <a href="https://twitter.com/lezwatchtv/" target="_blank"><i class="bi bi-twitter"></i></a></p>
+				<p class="mb-1">
+					<a href="https://github.com/LezWatch/status-page/" target="_blank"><i class="bi bi-github"></a></i>&nbsp;
+					<a rel="me" href="https://twitter.com/lezwatchtv/" target="_blank"><i class="bi bi-twitter-x"></i></a>&nbsp;
+					<a rel="me" href="https://mstdn.social/@lezwatchtv" target="_blank"><i class="bi bi-mastodon"></i></a>
+				</p>
 
 				<p class="mb-1">Licensed <a href="/LICENSE">MIT</a></p>
 			</footer>
